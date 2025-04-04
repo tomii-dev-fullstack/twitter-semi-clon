@@ -17,6 +17,7 @@ export default function TweetCard({ username, body, title, avatar }: TweetCardPr
                     <div className="flex items-center space-x-4 text-gray-500 text-sm mt-2">
 
                         <button className="hover:text-red-500 text-white">❤️ Me gusta</button>
+                        <button className="hover:text-red-500 text-white">❌ No me gusta</button>
                     </div>
                 </div>
             </div>
