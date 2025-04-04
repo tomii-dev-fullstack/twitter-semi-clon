@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 
 export default function PostBox() {
@@ -7,7 +8,7 @@ export default function PostBox() {
     return (
         <div className="border-b w-full  border-gray-300  p-8  bg-black">
             <div className="flex items-start space-x-3">
-                <img src="https://via.placeholder.com/50" alt="avatar" className="w-12 h-12 rounded-full" />
+                <Image src="https://via.placeholder.com/50" alt="avatar" className="w-12 h-12 rounded-full" />
                 <div className="w-full">
                     <textarea
                         className="w-full resize-none border-none focus:ring-0 text-lg placeholder-gray-500"

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface TweetCardProps {
     username: string;
     body: string;
@@ -8,7 +10,7 @@ export default function TweetCard({ username, body, title, avatar }: TweetCardPr
     return (
         <div className=" border-b p-8 py-3 bg-black">
             <div className="flex items-start space-x-3">
-                <img src={`${avatar}`} alt="avatar" className="w-12 h-12 rounded-full" />
+                <Image src={`${avatar}`} alt="avatar" className="w-12 h-12 rounded-full" />
                 <div>
                     <p className="font-semibold text-white">{username}</p>
                     <p className="text-gray-700 text-xl text-white mt-1">{body}</p>
